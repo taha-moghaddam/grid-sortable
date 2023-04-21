@@ -16,6 +16,8 @@ class GridSortableServiceProvider extends ServiceProvider
             return ;
         }
 
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'grid-sortable');
+
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
                 [$assets => public_path('vendor/laravel-admin-ext/grid-sortable')],

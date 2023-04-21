@@ -45,7 +45,7 @@ SCRIPT;
     {
         $this->script();
 
-        $text = __('Save order');
+        $text = __('grid-sortable::btn.Save order');
 
         return <<<HTML
 <button type="button" class="btn btn-sm btn-info grid-save-order-btn" style="margin-left: 10px;display: none;">
